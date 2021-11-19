@@ -48,7 +48,7 @@ def square():
     sendmsg("up 75")
     for i in range(4):
         sendmsg("forward 100")
-        sendmsg("cw 90")
+        sendmsg("ccw 90")
 
 #Triangle
 def triangle():
@@ -56,6 +56,10 @@ def triangle():
         sendmsg("forward 100")
         sendmsg("cw 120")
 
+#Double flip
+def doubleFlip():
+    for i in range(2):
+        sendmsg("flip b")
 print("\nSpencer Kohler")
 print("Program Name: Test Flight")
 print("Date: 11-17-2021")
@@ -71,7 +75,9 @@ try:
         sendmsg('command', 0)
         sendmsg('takeoff')
 
-        triangle()
+
+        square()
+
 
         sendmsg('land')
 
