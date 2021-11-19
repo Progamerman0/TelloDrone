@@ -50,6 +50,12 @@ def square():
         sendmsg("forward 100")
         sendmsg("cw 90")
 
+#Triangle
+def triangle():
+    for i in range(3):
+        sendmsg("forward 100")
+        sendmsg("cw 120")
+
 print("\nSpencer Kohler")
 print("Program Name: Test Flight")
 print("Date: 11-17-2021")
@@ -65,7 +71,7 @@ try:
         sendmsg('command', 0)
         sendmsg('takeoff')
 
-        square()
+        triangle()
 
         sendmsg('land')
 
