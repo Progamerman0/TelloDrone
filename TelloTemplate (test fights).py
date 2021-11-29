@@ -60,6 +60,13 @@ def triangle():
 def doubleFlip():
     for i in range(2):
         sendmsg("flip b")
+
+#Octogon
+def octogon():
+    for i in range(8):
+        sendmsg("forward 100")
+        sendmsg("ccw ")
+
 print("\nSpencer Kohler")
 print("Program Name: Test Flight")
 print("Date: 11-17-2021")
