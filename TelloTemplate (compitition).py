@@ -51,8 +51,7 @@ def secondHoop():
     sendmsg("go 250 0 70 50")
 
 def thirdHoop():
-    sendmsg("curve 0 25 0 75 75 0 30")
-    sendmsg("curve 0 -25 0 -75 -75 0 30")
+    sendmsg("curve 0 25 0 100 100 0 30")
 
 #def forthHoop():
 
@@ -72,8 +71,8 @@ try:
         sendmsg('command', 0)
         sendmsg('takeoff')
 
-        #firstHoop()
-        #secondHoop()
+        firstHoop()
+        secondHoop()
         thirdHoop()
         # Review the (SDK) Software Development Kit resource for Drone Commands
         # Delete these comments before writing your program
